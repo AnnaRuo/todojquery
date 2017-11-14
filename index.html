@@ -110,8 +110,12 @@
 
   $(document).ready(function() {
     $("input[type=checkbox]").bind('change', toggleDone);
-    updateCounters(); 
+    updateCounters();
   });
+  </script>
+  
+  <script>
+    $("#total-count").html($(".todo").length);
   </script>
 </body>
 </html>
